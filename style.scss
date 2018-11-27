@@ -1,0 +1,101 @@
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+
+// font-family
+$baseFontFamily :"游ゴシック",
+YuGothic,
+"メイリオ",
+Verdana,
+"Hiragino Kaku Gothic ProN",
+Meiryo,
+sans-serif;
+
+// colors
+$baseColor: #fdfcf6;
+$subColor: #66bb6a;
+$keyColor: #ffd54f;
+$fontColor: #4c4c4c;
+
+
+/* Base
+------------------------------------------------------------*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: $fontColor;
+  font-size: 1.4rem;
+  font-family: $baseFontFamily;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: $baseColor;
+}
+
+/* Align
+------------------------------------------------------------*/
+
+.text-center {
+  text-align: center;
+}
+
+/* Header
+------------------------------------------------------------*/
+
+.image {
+  background-image: url("./images/img_cafe_main.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (max-width: 768px) {
+  .image {
+    height: 250px;
+  }
+}
+
+
+/* Main
+------------------------------------------------------------*/
+h2 {
+  font-size: 28px;
+}
+
+.container {
+  display: flex;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+  .menu-box {
+    background-color: $subColor;
+    margin: 10px;
+    h3 {
+      background-color: $keyColor;
+      font-weight: bold;
+      padding: 10px;
+    }
+    p {
+      padding: 10px;
+    }
+  }
+}
+
+/* Footer
+------------------------------------------------------------*/
+footer {
+  background-color: $keyColor;
+  padding: 10px;
+  margin-top: 30px;
+  a {
+    background-color: $subColor;
+    text-align: center;
+    display: block;
+    width: 33%;
+    margin: 0 auto;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+}
